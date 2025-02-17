@@ -1,0 +1,104 @@
+/* ページ全体のスクロールを防ぐ */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* スクロール無効 */
+    background-color: white;
+    padding-right: 2%;
+  }
+  
+  /* チャットアプリ全体 */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 画面全体を固定 */
+    width: 90vw;
+  }
+  
+  /* ヘッダー（アプリ名） */
+  .chat-header {
+    background-color: #f97316; /* オレンジ */
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20px 20px 0px 0px;  
+  }
+  
+  /* チャット表示エリア（スクロール可能に） */
+  .chat-messages {
+    flex: 1;
+    overflow-y: auto; /* ここだけスクロール可能に */
+    padding: 16px;
+    background-color: #fed7aa; /* 薄いオレンジ */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0px 0px 20px 20px;  
+  }
+  
+  /* メッセージのレイアウト */
+  .message {
+    display: flex;
+  }
+  
+  /* 自分のメッセージ（右側） */
+  .message.user {
+    justify-content: flex-end;
+    text-align: left;
+  }
+  
+  .message.user .message-bubble {
+    background-color: #3b82f6; /* 青 */
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Gemini のメッセージ（左側） */
+  .message.gemini {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .message.gemini .message-bubble {
+    background-color: #d1d5db; /* グレー */
+    color: black;
+    align-self: flex-start;
+  }
+  
+  /* メッセージの吹き出し */
+  .message-bubble {
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 70%; /* 幅 70% まで */
+    word-wrap: break-word; /* はみ出し防止 */
+    overflow-wrap: break-word;
+  }
+  
+  /* 入力エリア */
+  .chat-input {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    background: white;
+  }
+  .chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+  }
+  .chat-input button {
+    padding: 8px 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .chat-input button:hover {
+    background-color: #2563eb;
+  }
+  
