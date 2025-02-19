@@ -5,7 +5,7 @@
 一人暮らしの大学生や家事に忙しい主婦の方々が、短時間で美味しい晩ごはんを決定できるようサポートします。
 
 ## デモ動画
-- **デモ動画URL**： [こちらからご覧ください](https://example.com) 
+- **デモ動画URL**： [こちらからご覧ください](https://drive.google.com/file/d/1THqIGJ9ZfNvKwl23JCB8SN4v9uFN2If7/view?usp=drive_link) 
 
 ## 主な機能  
 - **Gemini APIを使ったチャット形式の対話**：ユーザと対話しながら、おすすめの晩ごはんを提案。  
@@ -34,4 +34,4 @@
 ## 今後の展望
 
 ## ハッカソン発表用スライド
-- **スライドURL**： [こちらからご覧ください](https://example.com) 
+- **スライドURL**： [こちらからご覧ください](https://docs.google.com/presentation/d/1vh0Eeb8qMpsGgtKmzcXFXQyR9EU13aGXCruADgnUR7A/edit?usp=drive_link) 
